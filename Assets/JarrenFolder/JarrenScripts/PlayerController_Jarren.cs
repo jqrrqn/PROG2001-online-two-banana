@@ -42,6 +42,4 @@ public class PlayerController_Jarren : MonoBehaviour
         // Apply force to the Rigidbody to move the player.
         rb.AddForce(movement * speed);
     }
-
-
 }
