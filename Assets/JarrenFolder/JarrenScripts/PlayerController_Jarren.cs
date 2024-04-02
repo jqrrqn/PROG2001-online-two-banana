@@ -26,6 +26,9 @@ public class PlayerController_Jarren : MonoBehaviour
     // UI object to display winning text.
     public GameObject winTextObject;
 
+    public AudioSource gemSound;
+    public AudioSource winSound;
+
     // Start is called before the first frame update.
     void Start()
     {
@@ -77,6 +80,8 @@ public class PlayerController_Jarren : MonoBehaviour
 
             // Update the count display.
             SetCountText();
+
+            gemSound.Play();
         }
     }
 
@@ -87,10 +92,11 @@ public class PlayerController_Jarren : MonoBehaviour
         countText.text = "Gems: " + count.ToString();
 
         // Check if the count has reached or exceeded the win condition.
-        if (count >= 6)
+        if (count >= 20)
         {
             // Display the win text.
             winTextObject.SetActive(true);
+            winSound.Play();
         }
     }
 }

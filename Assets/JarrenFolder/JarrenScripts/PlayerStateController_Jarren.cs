@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerStateController_Jarren : MonoBehaviour
 {
     Animator animator;
+    public AudioSource movementSound;
 
     // Start is called before the first frame update
     void Start()
@@ -16,15 +17,22 @@ public class PlayerStateController_Jarren : MonoBehaviour
     void Update()
     {
         bool forward = Input.GetKey("w");
+        bool moving = Input.GetKeyDown("w");
 
         if(forward)
         {
             animator.SetBool("isFloating", true);
         }
 
+        if(moving)
+        {
+            movementSound.Play();
+        }
+
         if (!forward) 
         {
             animator.SetBool("isFloating", false);
+            
         }
     }
 }
