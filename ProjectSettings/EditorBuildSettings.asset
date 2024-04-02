@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Menu/MenuScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/JarrenFolder/JarrenScenes/JarrenScene.unity
+    guid: 9a3eb5f9add624866896213fd657577c
+  - enabled: 1
+    path: Assets/JarrenFolder/JarrenScenes/PauseMenu_Jarren.unity
+    guid: deb589ef07b4d4a1e8d9d1a35f5d4fa7
   m_configObjects: {}
