@@ -2168,6 +2168,8 @@ MonoBehaviour:
   speed: 20
   countText: {fileID: 0}
   winTextObject: {fileID: 0}
+  gemSound: {fileID: 0}
+  winSound: {fileID: 0}
 --- !u!65 &1724681451782386718
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2179,8 +2181,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.65, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.0295873, y: 2.5228987, z: 1.186157}
+  m_Center: {x: -0.006809652, y: 1.148838, z: 0.093078494}
 --- !u!114 &-5427015375636405844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2193,7 +2195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40895c91679324e56adac12af87afd4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  movementSound: {fileID: 0}
 --- !u!95 &8138714597815092154
 Animator:
   serializedVersion: 5
