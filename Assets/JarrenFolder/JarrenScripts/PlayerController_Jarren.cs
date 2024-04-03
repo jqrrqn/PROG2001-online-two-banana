@@ -92,7 +92,7 @@ public class PlayerController_Jarren : MonoBehaviour
         countText.text = "Gems: " + count.ToString();
 
         // Check if the count has reached or exceeded the win condition.
-        if (count >= 20)
+        if (count == 20)
         {
             // Display the win text.
             winTextObject.SetActive(true);
