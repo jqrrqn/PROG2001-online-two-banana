@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Menu/MenuScene.unity
+    path: Assets/Menu/MenuScenes/MenuScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/JarrenFolder/JarrenScenes/JarrenScene.unity
@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JarrenFolder/JarrenScenes/PauseMenu_Jarren.unity
     guid: deb589ef07b4d4a1e8d9d1a35f5d4fa7
+  - enabled: 1
+    path: Assets/IyeesheaFolder/Scene/IyeesheaScene.unity
+    guid: 7b5c3be97229d430bbe84c7a613081d0
   m_configObjects: {}
