@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 
-public class PlayerController_Jarren : MonoBehaviour
+public class PlayerController_Iyeeshea : MonoBehaviour
 {
     // Rigidbody of the player.
     private Rigidbody rb;
