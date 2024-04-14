@@ -1,28 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
-
     private Rigidbody rb;
 
-    private int count;
     private float movementX;
     private float movementY;
 
-
     public float speed = 0;
 
-   
+    private int count;
+    public TextMeshProUGUI countText;
+    public GameObject winPanel;
+
     void Start()
     {
-
         rb = GetComponent<Rigidbody>();
-
+        count = 0;
+        SetCountText();
     }
 
     // This function is called when a move input is detected.
@@ -38,10 +37,31 @@ public class PlayerController : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("PickUp"))
+        if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
+            count += 1;
+            SetCountText();
         }
+    }
+
+    public void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
+        CheckScore();
+    
+    }
+
+    public void CheckScore()
+    {
+        if (count >= 7)
+        {
+           winPanel.SetActive(true);
+
+        }
+        
+
+
     }
 
     // FixedUpdate is called once per fixed frame-rate frame.
@@ -53,7 +73,6 @@ public class PlayerController : MonoBehaviour
         // Apply force to the Rigidbody to move the player.
         rb.AddForce(movement * speed);
     }
-
-
 }
+
 
