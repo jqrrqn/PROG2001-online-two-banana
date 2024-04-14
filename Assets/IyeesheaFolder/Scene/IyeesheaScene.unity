@@ -231,6 +231,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 5 Side Diamond
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aa56074584965524093e852b02a99de7, type: 3}
+      propertyPath: m_TagString
+      value: PickUp
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aa56074584965524093e852b02a99de7, type: 3}
       propertyPath: m_RootOrder
       value: 1
