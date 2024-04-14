@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // This function is called when a move input is detected.
-    void OnMove(InputValue movementValue)
+    public void OnMove(InputValue movementValue)
     {
         // Convert the input value into a Vector2 for movement.
         Vector2 movementVector = movementValue.Get<Vector2>();
@@ -34,6 +34,14 @@ public class PlayerController : MonoBehaviour
         // Store the X and Y components of the movement.
         movementX = movementVector.x;
         movementY = movementVector.y;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("PickUp"))
+        {
+            other.gameObject.SetActive(false)
+        }
     }
 
     // FixedUpdate is called once per fixed frame-rate frame.
