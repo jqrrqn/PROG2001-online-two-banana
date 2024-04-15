@@ -8865,7 +8865,8 @@ PrefabInstance:
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: 9df7021e1cc3dda4181323979d90c1ea, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5182406093821713264, guid: e5836d050fdb354479bcd0d285bf2f22, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e5836d050fdb354479bcd0d285bf2f22, type: 3}
 --- !u!43 &381304115
 Mesh:
@@ -44598,6 +44599,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400116, guid: e5836d050fdb354479bcd0d285bf2f22, type: 3}
   m_PrefabInstance: {fileID: 379838956}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1521273784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521273765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd1e620de17e49e28dfae3d875eb6e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 30
+  countText: {fileID: 557858638}
+  winTextObject: {fileID: 551175505}
+  gemSound: {fileID: 1922156457}
+  winSound: {fileID: 95237380}
 --- !u!1001 &1523438530
 PrefabInstance:
   m_ObjectHideFlags: 0
